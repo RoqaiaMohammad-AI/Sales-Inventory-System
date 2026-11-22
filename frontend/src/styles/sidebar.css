@@ -1,0 +1,110 @@
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+  background: #202124;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px 16px;
+  direction: rtl;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+/* Brand */
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px 28px;
+  border-bottom: 1px solid #38393c;
+}
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #202124;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-info h2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+
+.brand-info span {
+  font-size: 11px;
+  color: #a1a1aa;
+}
+
+/* Section title */
+.sidebar-section-title {
+  color: #85858d;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 25px 12px 12px;
+}
+
+/* Navigation */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-link {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 13px;
+  border-radius: 9px;
+  color: #c4c4ca;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background: #303136;
+  color: #ffffff;
+}
+
+.sidebar-link.active {
+  background: #ffffff;
+  color: #202124;
+  font-weight: 700;
+}
+
+.active-arrow {
+  margin-right: auto;
+}
+
+/* Bottom section */
+.sidebar-bottom {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #38393c;
+}
+
+.sidebar-version {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 12px 0;
+  color: #85858d;
+  font-size: 11px;
+}
