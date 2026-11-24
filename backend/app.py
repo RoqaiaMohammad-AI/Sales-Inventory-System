@@ -1,10 +1,9 @@
 ﻿from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
 
 from config import Config
-
-db = SQLAlchemy()
+from extensions import db
+from api.inventory.categories import categories_bp
 
 
 def create_app():
@@ -12,6 +11,8 @@ def create_app():
     app.config.from_object(Config)
 
     db.init_app(app)
+
+    app.register_blueprint(categories_bp)
 
     @app.get("/")
     def home():
